@@ -5,6 +5,7 @@ class Board
 {
 private:
     int grid[4][4];
+    int scoreGained;
 
 public:
     Board();
@@ -18,6 +19,8 @@ public:
     bool moveRight();
     bool moveUp();
     bool moveDown();
+
+    int getScoreGained();
 
     bool isGameOver();
     bool hasWon();

@@ -45,6 +45,7 @@ void Game::handleInput(char input)
 
     if (moved)
     {
+        score += board.getScoreGained();
         board.addTile();
     }
 }
